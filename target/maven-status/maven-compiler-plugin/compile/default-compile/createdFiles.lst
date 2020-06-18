@@ -1,0 +1,5 @@
+smplugs\smcustomitems\commands\DestroyerCommand.class
+smplugs\smcustomitems\configs\Config.class
+smplugs\smcustomitems\events\DestroyerEvents.class
+smplugs\smcustomitems\utils\DestroyerUtil.class
+smplugs\smcustomitems\SMCustomItems.class

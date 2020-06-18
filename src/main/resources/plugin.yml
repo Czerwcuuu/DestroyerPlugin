@@ -1,0 +1,8 @@
+name: SMCustomItems
+version: ${project.version}
+main: smplugs.smcustomitems.SMCustomItems
+api-version: 1.13
+description: Simple plugin with a explosion tool;
+commands:
+  destroyer:
+    description: Base destroyer command
