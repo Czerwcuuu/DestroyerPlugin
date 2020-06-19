@@ -61,8 +61,8 @@ public class DestroyerUtil {
 
             boolean success = Bukkit.addRecipe(destro);
 
-            if(success)SMCustomItems.getInstance().getLogger().fine("Registered recipe of "+ DESTROYER_KEY.getNamespace()+":"+DESTROYER_KEY.getKey());
-            else SMCustomItems.getInstance().getLogger().fine("Failed to register recipe of "+ DESTROYER_KEY.getNamespace()+":"+DESTROYER_KEY.getKey());
+           if(success)SMCustomItems.getInstance().getLogger().fine("Registered recipe of "+ DESTROYER_KEY.getNamespace()+":"+DESTROYER_KEY.getKey());
+           else SMCustomItems.getInstance().getLogger().fine("Failed to register recipe of "+ DESTROYER_KEY.getNamespace()+":"+DESTROYER_KEY.getKey());
 
             return success;
         }

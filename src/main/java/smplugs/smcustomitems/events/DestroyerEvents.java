@@ -3,10 +3,13 @@ package smplugs.smcustomitems.events;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.Mob;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.inventory.ItemStack;
 import smplugs.smcustomitems.SMCustomItems;
@@ -14,11 +17,11 @@ import smplugs.smcustomitems.utils.DestroyerUtil;
 
 public class DestroyerEvents implements Listener {
     @EventHandler(priority = EventPriority.HIGH)
-    public void WhenAttack(EntityDamageEvent event){
+    public void WhenAttack(EntityDamageByEntityEvent event){
     if(event.isCancelled()) return;
 
-    if(event.getEntity() instanceof Player){
-        Player player = (Player) event.getEntity();
+    if(event.getEntity() instanceof Mob){
+        Player player = (Player) event.getDamager();
 
         if(!player.hasPermission(DestroyerUtil.DESTROYER_USE_PERM)) return;
 

@@ -11,7 +11,7 @@ import smplugs.smcustomitems.events.DestroyerEvents;
 
 public final class SMCustomItems extends JavaPlugin {
 
-    private final Logger logger = Logger.getLogger("Destroyer");
+    private final Logger logger = Logger.getLogger("smcustomitems");
     private static Config config;
 
     private static SMCustomItems plugin;
